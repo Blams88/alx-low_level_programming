@@ -20,7 +20,7 @@ if (arr == NULL)
 	return (NULL);
 for (i = 0; i < height; i++)
 {
-	 arr[i] = malloc(sizeof(int) * width);
+	arr[i] = malloc(sizeof(int) * width);
 	if (arr[i] == NULL)
 	{
 		for (freenum = 0; freenum < i; freenum++)
@@ -29,15 +29,15 @@ for (i = 0; i < height; i++)
 		}
 		free(arr);
 		return (NULL);
-                }
-        }
-        for (x = 0; x < height; x++)
-        {
+	}
+	for (x = 0; x < height; x++)
+	{
 		for (y = 0; y < width; y++)
 		{
-		arr[x][y] = 0;
+			arr[x][y] = 0;
 		}
 	}
- return (arr);
+}
+return (arr);
 }
 
