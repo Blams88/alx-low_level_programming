@@ -14,7 +14,7 @@ int y;
 int i;
 int **arr;
 if (width < 1 || height < 1)
-    return (NULL);
+	return (NULL);
 arr = malloc(sizeof(int *) * height);
 if (arr == NULL)
 	return (NULL);
@@ -23,12 +23,13 @@ for (i = 0; i < height; i++)
 	arr[i] = malloc(sizeof(int) * width);
 if (arr[i] == NULL)
 {
-	for (freenum = 0; freenum < i; freenum++)
-	{
-		free(arr[freenum]);
-    }
+for (freenum = 0; freenum < i; freenum++)
+{
+	free(arr[freenum]);
+}
 	free(arr);
 	return (NULL);
+}
 }
 for (x = 0; x < height; x++)
 {
