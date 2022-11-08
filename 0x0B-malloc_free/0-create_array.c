@@ -8,7 +8,6 @@
  */
 char *create_array(unsigned int size, char c)
 {
-<<<<<<< HEAD
 	unsigned int i;
 	char *array;
 	if (size == 0)
@@ -23,7 +22,6 @@ char *create_array(unsigned int size, char c)
 		array[i] = c;
 	}
 	return (array);
-=======
         unsigned int i;
         char *array;
         if (size == 0)
@@ -38,6 +36,5 @@ char *create_array(unsigned int size, char c)
                 array[i] = c;
         }
                 return (array);
->>>>>>> 3bda92ad47ac16964617b08a5bd8028c08878b53
 }
 
