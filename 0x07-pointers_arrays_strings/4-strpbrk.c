@@ -1,25 +1,24 @@
-#include <stdio.h>
 #include "main.h"
-
 /**
- * _strpbrk - Entry point
- * @s: input
- * @accept: input
- * Return: Always 0 (Success)
- */
+  * _strpbrk - located the first occurence in S if any bytes in accept
+  * @s: the string we look for occurrences in
+  * @accept: the print we compare against
+  *
+  * Return: a pointer to the byte or NULL
+  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i, n;
+	char c, *p;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (c = *s; c != 0; s++, c = *s)
 	{
-		for (n = 0; accept[n] != '\0'; n++)
+		for (p = accept; *p != 0; p++)
 		{
-			if (s[i] == accept[n])
-				return (s + i);
+			if (c == *p)
+			{
+				return (s);
+			}
 		}
 	}
-
-	return (NULL);
+return (0);
 }
-
