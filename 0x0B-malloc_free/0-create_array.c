@@ -1,5 +1,3 @@
-Task 0
-
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -14,7 +12,7 @@ char *create_array(unsigned int size, char c)
         char *array;
         if (size == 0)
                 return (NULL);
-        array = malloc(size * sizeof(char));
+                array = malloc(size * sizeof(char));
         if (array == NULL)
         {
                 return (NULL);
@@ -23,5 +21,5 @@ char *create_array(unsigned int size, char c)
         {
                 array[i] = c;
         }
-        return (array);
+                return (array);
 }
