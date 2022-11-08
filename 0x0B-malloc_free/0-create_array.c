@@ -16,6 +16,7 @@ array = malloc(size * sizeof(char));
 if (array == NULL)
 {
         return (NULL);
+}
 for (i = 0; i < size; i++)
 {
 	array[i] = c;
