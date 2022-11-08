@@ -33,9 +33,11 @@ int total = 0;
 if (!s1)
 	s1 = "";
 if (!s2)
+{
 	s2 = "";
-	total += _strlen(s1) + _strlen(s2);
+	total += _strlen(s1) +_strlen(s2);
 	new = malloc((total *sizeof(char)) + 1);
+}
 if (new == NULL)
 {
 	return (NULL);
